@@ -9,10 +9,12 @@
   ],
   "defaultSeverity": "error",
   "rules": {
-    "max-empty-lines": 2,
-    "at-rule-no-unknown": null,
-    "color-function-notation": "modern",
     "alpha-value-notation": "percentage",
+    "at-rule-no-unknown": null,
+    "at-rule-empty-line-before": null,
+    "color-function-notation": "modern",
+    "declaration-empty-line-before": null,
+    "max-empty-lines": 2,
     "selector-class-pattern": null,
     "scss/at-rule-no-unknown": true,
     "scss/dollar-variable-empty-line-before": null
