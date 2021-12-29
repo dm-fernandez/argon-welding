@@ -1,0 +1,16 @@
+dist
+
+node_modules
+Thumbs.db
+ex_files
+.Saved
+.vscode
+.idea
+.publish
+.DS_Store
+*.log
+*.sublime-*
+*.rar
+*.zip
+_arc
+__MACOSX

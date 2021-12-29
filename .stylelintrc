@@ -1,0 +1,20 @@
+{
+  "syntax": "scss",
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-recess-order"
+  ],
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "defaultSeverity": "error",
+  "rules": {
+    "max-empty-lines": 2,
+    "at-rule-no-unknown": null,
+    "color-function-notation": "modern",
+    "alpha-value-notation": "percentage",
+    "selector-class-pattern": null,
+    "scss/at-rule-no-unknown": true,
+    "scss/dollar-variable-empty-line-before": null
+  }
+}
