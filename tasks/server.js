@@ -4,14 +4,14 @@ import config from '../gulpfile.config';
 const server = () => {
   browserSync.create().init({
     server: {
-      baseDir: config.DIST.ROOT,
+      baseDir: config.dist.root,
     },
     files: [
-      `${config.DIST.HTML}/*.html`,
-      `${config.DIST.STYLES}/**/*.css`,
-      `${config.DIST.JS}/**/*.js`,
+      `${config.dist.html}/*.html`,
+      `${config.dist.styles}/**/*.css`,
+      `${config.dist.js}/**/*.js`,
       {
-        match: `${config.DIST.IMG}/**/*.*`,
+        match: `${config.dist.img}/**/*.{jpg,png,svg}`,
         fn() {
           this.reload();
         },

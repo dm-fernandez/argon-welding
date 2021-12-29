@@ -1,32 +1,29 @@
 import gulp from 'gulp';
-import browserify from 'browserify';
-import gulpIf from 'gulp-if';
-import sourceMaps from 'gulp-sourcemaps';
-import uglify from 'gulp-uglify';
-import vBuffer from 'vinyl-buffer';
-import vSourceStream from 'vinyl-source-stream';
+import plumber from 'gulp-plumber';
+import notify from 'gulp-notify';
+import webpack from 'webpack-stream';
 import config from '../gulpfile.config';
 
-export const taskScripts = () => (
-  browserify(`${config.SRC.JS}/index.js`, { debug: true })
-    .transform('babelify', {
-      presets: [
-        '@babel/preset-env',
+export const taskScripts = () => gulp.src(config.src.js, { sourcemaps: config.isDev })
+  .pipe(plumber(notify.onError({
+    title: 'JS',
+    message: 'Error: <%= error.message %>',
+  })))
+  .pipe(webpack({
+    mode: config.isProd ? 'production' : 'development',
+    output: {
+      filename: 'bundle.js',
+    },
+    module: {
+      rules: [
+        {
+          test: /\.(js)$/,
+          exclude: /(node_modules)/,
+          loader: 'babel-loader',
+        },
       ],
-    })
-    .bundle()
-    .on('error', function browserifyError(error) {
-      console.log(error.stack);
-      this.emit('end');
-    })
-    .pipe(vSourceStream('index.js'))
-    .pipe(vBuffer())
-    .pipe(gulpIf(config.isDev, sourceMaps.init({
-      loadMaps: true,
-    })))
-    .pipe(gulpIf(config.isProd, uglify()))
-    .pipe(gulpIf(config.isDev, sourceMaps.write()))
-    .pipe(gulp.dest(config.DIST.JS))
-);
+    },
+  }))
+  .pipe(gulp.dest(config.dist.js));
 
-export const watchTaskScripts = () => gulp.watch(`${config.SRC.JS}/**/*.js`, taskScripts);
+export const watchTaskScripts = () => gulp.watch(config.watch.js, taskScripts);

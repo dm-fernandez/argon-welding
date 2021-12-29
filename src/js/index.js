@@ -1,2 +1,3 @@
-// eslint-disable-next-line no-console
-console.log('hello world');
+import testModule from './modules/testModule';
+
+testModule(20, 20);

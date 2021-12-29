@@ -30,11 +30,4 @@ export const serve = gulp.series(
   ),
 );
 
-// gulp-replace gulp-terser gulp-gzip gulp-hash-filename yargs gulpif gulp-newer gulp-debug
-// import inject from 'gulp-inject';
-// import rename from 'gulp-rename';
-// import notify from 'gulp-notify';
-// import plumber from 'gulp-plumber';
-// import sourceMaps from 'gulp-sourcemaps';
-// import postcss from 'gulp-postcss';
-// import replace from 'gulp-replace';
+export const bundling = gulp.series(taskClean, taskScripts);
