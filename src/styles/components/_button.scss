@@ -1,0 +1,56 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+@import "../utilities/functions";
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 0 16px;
+  font-size: px2rem(18);
+  font-weight: 800;
+  color: $color-text-dark;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: px2rem(3);
+  background-color: $color-surface-light;
+  border: none;
+  @include transit(0.6s, all);
+
+  @media (min-width: $bp-md) {
+    position: relative;
+    width: auto;
+    padding: 20px 56px 16px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: $color-text-primary;
+      background-color: transparent;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 2px;
+      content: "";
+      background-color: $color-onsurface-light;
+      @include transit(0.3s, all);
+    }
+
+    &::after {
+      top: inherit;
+      right: inherit;
+      bottom: 0;
+      left: 0;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
