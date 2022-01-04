@@ -1,0 +1,42 @@
+@import "../utilities/variables";
+@import "../utilities/functions";
+
+.phone-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.phone-block__number {
+  display: block;
+  font-size: px2rem(24);
+  font-weight: 600;
+  color: $color-text-primary;
+  text-decoration: none;
+}
+
+.phone-block__callback {
+  position: relative;
+  display: inline-block;
+  font-size: px2rem(14);
+  font-weight: 600;
+  color: $color-text-primary;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: px2rem(3);
+
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    content: "";
+    background-color: $color-onsurface-light;
+    @include transit(0.3s, all);
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+}
