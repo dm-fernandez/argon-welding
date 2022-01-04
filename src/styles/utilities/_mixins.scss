@@ -1,4 +1,12 @@
+@import "./variables";
+
 @mixin remove-indents {
   padding: 0;
   margin: 0;
+}
+
+@mixin transit($duration, $property) {
+  transition-timing-function: ease;
+  transition-duration: $duration;
+  transition-property: $property;
 }
