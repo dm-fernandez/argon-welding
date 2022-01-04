@@ -3,12 +3,22 @@
 // -------------------------------------------- //
 $black: rgb(17 17 17);
 $white: rgb(248 248 248);
-$white-opacity: rgb(248 248 248 / 4%);
+$white-opacity: rgb(248 248 248 / 10%);
+$black-opacity: rgb(17 17 17 / 40%);
 $grey: rgb(176 176 176);
 
-$color-bg: $black;
 $color-text-primary: $white;
 $color-text-secondary: $grey;
+$color-text-dark: $black;
+
+$color-surface-dark: $black;
+$color-surface-light: $white;
+
+$color-surface-dark-opacity: $black-opacity;
+$color-surface-light-opacity: $white-opacity;
+
+$color-onsurface-dark: $black;
+$color-onsurface-light: $white;
 
 // -------------------------------------------- //
 // Breakpoints -------------------------------- //
