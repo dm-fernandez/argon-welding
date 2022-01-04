@@ -1,0 +1,12 @@
+@import "../utilities/variables";
+
+.container {
+  width: 100%;
+  padding: 0 6vw;
+  margin: 0 auto;
+
+  @media (min-width: $bp-xxl) {
+    max-width: 1280px;
+    padding: 0;
+  }
+}
