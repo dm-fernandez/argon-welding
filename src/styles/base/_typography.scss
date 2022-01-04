@@ -4,12 +4,11 @@
 
 .section-title {
   @include remove-indents;
-  font-size: px2rem(28);
+  font-size: px2rem(32);
   font-weight: 800;
   line-height: 120%;
   color: $color-text-primary;
   text-transform: uppercase;
-
 
   @media (min-width: $bp-md) {
     font-size: px2rem(40);
