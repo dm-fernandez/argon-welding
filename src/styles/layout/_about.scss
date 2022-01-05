@@ -28,8 +28,8 @@
     &::before {
       position: absolute;
       top: 0;
-      left: auto;
       right: -20vw;
+      left: auto;
       z-index: -1;
       width: 70%;
       height: 100%;
@@ -102,9 +102,11 @@
 }
 
 .about__numbers {
+  width: 50%;
   margin-right: px2rem(40);
   font-size: px2rem(56);
   font-weight: 200;
+  text-align: left;
 
   @media (min-width: $bp-md) {
     margin-right: 0;
