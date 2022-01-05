@@ -52,7 +52,7 @@
 }
 
 .header__logo-img {
-  @media (min-width: $bp-lg) {
+  @media (min-width: $bp-md) {
     width: px2rem(140);
   }
 }
