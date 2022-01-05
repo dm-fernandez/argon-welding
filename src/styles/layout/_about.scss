@@ -4,30 +4,31 @@
 
 .about {
   position: relative;
-  padding-top: 80px;
-  margin-bottom: 16vh;
+  padding-top: px2rem(120);
+  margin-bottom: $margin-section-xs;
   overflow-x: hidden;
 
   &::before {
     position: absolute;
-    top: -40px;
-    right: -80px;
+    top: 0;
+    left: 30vw;
     z-index: -1;
-    width: 356px;
-    height: 194px;
+    width: px2rem(356);
+    height: px2rem(194);
     content: "";
     background-image: url("../img/svg/aw-logo-icon.svg");
     background-repeat: no-repeat;
-    background-size: 356px;
+    background-size: px2rem(356);
   }
 
-  @media (min-width: $bp-lg) {
+  @media (min-width: $bp-md) {
     padding-top: 0;
-    margin-bottom: 24vh;
+    margin-bottom: $margin-section-lg;
 
     &::before {
       position: absolute;
       top: 0;
+      left: auto;
       right: -20vw;
       z-index: -1;
       width: 70%;
@@ -35,26 +36,26 @@
       content: "";
       background-image: url("../img/svg/aw-logo-icon.svg");
       background-repeat: no-repeat;
-      background-size: 856px;
+      background-size: px2rem(856);
     }
   }
 }
 
 .about__title {
-  margin-bottom: 72px;
+  margin-bottom: px2rem(72);
 }
 
 .about__content-blocks-wrapper {
-  @media (min-width: $bp-lg) {
+  @media (min-width: $bp-md) {
     display: flex;
     align-items: center;
   }
 }
 
 .about__description {
-  margin-bottom: 32px;
+  margin-bottom: px2rem(32);
 
-  @media (min-width: $bp-lg) {
+  @media (min-width: $bp-md) {
     order: 2;
     margin-bottom: 0;
     color: $color-text-primary;
@@ -62,7 +63,7 @@
 }
 
 .about__numeral-blocks {
-  @media (min-width: $bp-lg) {
+  @media (min-width: $bp-md) {
     order: 1;
     min-width: 24%;
     margin-right: 6vw;
@@ -77,14 +78,14 @@
   color: $color-text-primary;
 
   &:not(:nth-last-child(1)) {
-    margin-bottom: 20px;
+    margin-bottom: px2rem(20);
   }
 
-  @media (min-width: $bp-lg) {
+  @media (min-width: $bp-md) {
     display: block;
 
     &:not(:nth-last-child(1)) {
-      margin-bottom: 40px;
+      margin-bottom: px2rem(40);
     }
   }
 }
@@ -95,17 +96,21 @@
   text-align: right;
   letter-spacing: px2rem(3);
 
-  @media (min-width: $bp-lg) {
+  @media (min-width: $bp-md) {
     text-align: left;
   }
 }
 
 .about__numbers {
+  margin-right: px2rem(40);
   font-size: px2rem(56);
   font-weight: 200;
 
-  @media (min-width: $bp-lg) {
+  @media (min-width: $bp-md) {
     margin-right: 0;
+  }
+
+  @media (min-width: $bp-lg) {
     font-size: px2rem(72);
   }
 }

@@ -5,7 +5,7 @@
 .btn {
   display: inline-block;
   width: 100%;
-  padding: 20px 0 16px;
+  padding: px2rem(20) 0 px2rem(16);
   font-size: px2rem(18);
   font-weight: 800;
   color: $color-text-dark;
@@ -20,7 +20,7 @@
   @media (min-width: $bp-md) {
     position: relative;
     width: auto;
-    padding: 20px 56px 16px;
+    padding: px2rem(20) px2rem(56) px2rem(16);
     cursor: pointer;
 
     &:hover,
@@ -35,7 +35,7 @@
       top: 0;
       right: 0;
       width: 0;
-      height: 2px;
+      height: px2rem(2);
       content: "";
       background-color: $color-onsurface-light;
       @include transit(0.3s, all);

@@ -6,7 +6,7 @@
   margin: 0 auto;
 
   @media (min-width: $bp-xxl) {
-    max-width: 1280px;
+    max-width: px2rem(1280);
     padding: 0;
   }
 }
