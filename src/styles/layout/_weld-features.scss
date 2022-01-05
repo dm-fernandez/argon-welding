@@ -1,0 +1,10 @@
+@import "../utilities/variables";
+@import "../utilities/functions";
+
+.weld-features {
+  margin-bottom: $margin-section-xs;
+
+  @media (min-width: $bp-lg) {
+    margin-bottom: $margin-section-lg;
+  }
+}
