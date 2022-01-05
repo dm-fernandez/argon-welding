@@ -1,0 +1,111 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+@import "../utilities/functions";
+
+.about {
+  position: relative;
+  padding-top: 80px;
+  margin-bottom: 16vh;
+  overflow-x: hidden;
+
+  &::before {
+    position: absolute;
+    top: -40px;
+    right: -80px;
+    z-index: -1;
+    width: 356px;
+    height: 194px;
+    content: "";
+    background-image: url("../img/svg/aw-logo-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 356px;
+  }
+
+  @media (min-width: $bp-lg) {
+    padding-top: 0;
+    margin-bottom: 24vh;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: -20vw;
+      z-index: -1;
+      width: 70%;
+      height: 100%;
+      content: "";
+      background-image: url("../img/svg/aw-logo-icon.svg");
+      background-repeat: no-repeat;
+      background-size: 856px;
+    }
+  }
+}
+
+.about__title {
+  margin-bottom: 72px;
+}
+
+.about__content-blocks-wrapper {
+  @media (min-width: $bp-lg) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.about__description {
+  margin-bottom: 32px;
+
+  @media (min-width: $bp-lg) {
+    order: 2;
+    margin-bottom: 0;
+    color: $color-text-primary;
+  }
+}
+
+.about__numeral-blocks {
+  @media (min-width: $bp-lg) {
+    order: 1;
+    min-width: 24%;
+    margin-right: 6vw;
+  }
+}
+
+.about__numeral-block {
+  @include remove-indents;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $color-text-primary;
+
+  &:not(:nth-last-child(1)) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $bp-lg) {
+    display: block;
+
+    &:not(:nth-last-child(1)) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.about__numeral-block:not(.about__numbers) {
+  font-size: px2rem(16);
+  font-weight: 700;
+  text-align: right;
+  letter-spacing: px2rem(3);
+
+  @media (min-width: $bp-lg) {
+    text-align: left;
+  }
+}
+
+.about__numbers {
+  font-size: px2rem(56);
+  font-weight: 200;
+
+  @media (min-width: $bp-lg) {
+    margin-right: 0;
+    font-size: px2rem(72);
+  }
+}
