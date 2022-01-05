@@ -2,11 +2,21 @@
 @import "../utilities/functions";
 
 .header {
+  position: relative;
   width: 100vw;
   height: 100vh;
+  margin-bottom: 4vh;
   background-image: url("../img/argon-welding-cover-01-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $bp-md) {
+    margin-bottom: 12vh;
+  }
+
+  @media (min-width: $bp-lg) {
+    margin-bottom: 24vh;
+  }
 
   @media (min-width: $bp-md) and (max-width: $bp-lg) {
     background-image: url("../img/argon-welding-cover-01-tablet.jpg");
