@@ -18,6 +18,7 @@ const server = () => {
       },
     ],
     ui: false,
+    open: false,
     port: 8080,
     notify: false,
   });
