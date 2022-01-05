@@ -37,11 +37,16 @@
 
 .paragraph {
   @include remove-indents;
-  font-size: px2rem(14);
+  font-size: px2rem(16);
   font-weight: 400;
   line-height: 160%;
 
   @media (min-width: $bp-md) {
     font-size: px2rem(16);
+  }
+
+  @media (min-width: $bp-lg) {
+    font-size: px2rem(20);
+    line-height: 180%;
   }
 }
