@@ -33,7 +33,7 @@
     height: 2px;
     content: "";
     background-color: $color-onsurface-light;
-    @include transit(0.3s, all);
+    @include transition(width, 0.3);
   }
 
   &:hover::before {

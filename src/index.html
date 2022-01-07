@@ -295,31 +295,38 @@
 
     <section class="feedback">
       <div class="container">
-        <h2 class="feedback__title section-title">Feedback</h2>
-        <p class="feedback__description paragraph">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. In vitae veritatis suscipit et. Nemo qui cupiditate ratione voluptas sed temporibus libero! Id iste odio inventore tempore modi vel saepe voluptas?
-        </p>
-        <form class="feedback__form form" action="POST">
-          <p>
-            <label for="input-name">Name and surname</label>
-            <input class="form__input-username input" id="input-name" type="text" placeholder="Enter your name" required>
-          </p>
-          <p>
-            <label for="input-phone">Phone number</label>
-            <input class="form__input-phone input" id="input-phone" type="tel" placeholder="Enter your phone" required>
-          </p>
-          <p>
-            <input class="form__checkbox checkbox" id="radio-agreement" type="checkbox" required>
-            <label for="radio-agreement">
-              I agree to
-              <a class="form__link" href="#">Privacy Policy</a>
-              and
-              <a class="form__link" href="#">Processing of personal data</a>
-            </label>
-          </p>
+        <div class="feedback__fluid-container">
+          <div class="feedback__description-block">
+            <h2 class="feedback__title section-title">Feedback</h2>
+            <p class="feedback__description paragraph">
+              Leave your contact details and then,<br>within 12 minutes, we will contact you.
+            </p>
+          </div>
+          <form class="feedback__form" action="POST">
 
-          <button class="form__btn btn" type="submit">Submit a request</button>
-        </form>
+            <p class="feedback__input input">
+              <input class="input__input input-username" id="input-username" type="text" required>
+              <label class="input__label" for="input-username">Name and surname</label>
+            </p>
+
+            <p class="feedback__input input">
+              <input class="input__input input-phone" id="input-phone" type="tel" required>
+              <label class="input__label" for="input-phone">Phone number</label>
+            </p>
+
+            <label class="feedback__checkbox checkbox">
+              <input class="checkbox__input" name="agreement" type="checkbox" required>
+              <span class="checkbox__description">
+                I agree to
+                <a class="checkbox__link link" href="#">Privacy Policy</a>
+                and
+                <a class="checkbox__link" href="#">Processing of personal data</a>
+              </span>
+            </label>
+
+            <button class="feedback__btn btn" type="submit">Submit a request</button>
+          </form>
+        </div>
       </div>
     </section>
 

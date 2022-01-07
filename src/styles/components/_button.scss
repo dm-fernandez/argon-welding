@@ -15,7 +15,7 @@
   letter-spacing: px2rem(3);
   background-color: $color-surface-light;
   border: none;
-  @include transit(0.6s, all);
+  @include transition(all, 0.6);
 
   @media (min-width: $bp-md) {
     position: relative;
@@ -27,6 +27,7 @@
     &:focus {
       color: $color-text-primary;
       background-color: transparent;
+      outline: none;
     }
 
     &::before,
@@ -38,7 +39,7 @@
       height: px2rem(2);
       content: "";
       background-color: $color-onsurface-light;
-      @include transit(0.3s, all);
+      @include transition(all, 0.3);
     }
 
     &::after {
@@ -49,7 +50,9 @@
     }
 
     &:hover::before,
-    &:hover::after {
+    &:hover::after,
+    &:focus::before,
+    &:focus::after, {
       width: 100%;
     }
   }

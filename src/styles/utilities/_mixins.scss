@@ -5,8 +5,14 @@
   margin: 0;
 }
 
-@mixin transit($duration, $property) {
+@mixin transition($property, $duration) {
   transition-timing-function: ease;
-  transition-duration: $duration;
+  transition-duration: $duration + s;
   transition-property: $property;
+}
+
+@mixin animation($name, $duration) {
+  animation-name: $name;
+  animation-duration: $duration + s;
+  animation-timing-function: ease;
 }

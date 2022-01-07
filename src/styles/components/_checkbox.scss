@@ -1,0 +1,60 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+@import "../utilities/functions";
+
+.checkbox {
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: px2rem(32);
+  height: px2rem(32);
+  margin: 0;
+  background-color: $color-surface-light-opacity;
+  border: 0;
+}
+
+input[type="checkbox"]:focus {
+  outline: 1px solid $color-surface-light;
+}
+
+input[type="checkbox"]::before {
+  width: px2rem(32);
+  height: px2rem(32);
+  content: "";
+  background-image: url("../img/svg/ic-check.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include transition(transofrm, 0.3);
+  transform: scale(0);
+}
+
+input[type="checkbox"]:checked {
+  background-color: $color-surface-light;
+  @include animation(scalable, 0.3);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.checkbox__description {
+  margin-left: px2rem(16);
+}
+
+.checkbox__link {
+  @include transition(color, 0.3);
+  color: $color-text-secondary;
+}
+
+.checkbox__link:hover,
+.checkbox__link:focus {
+  color: $color-text-primary;
+  outline: none;
+}

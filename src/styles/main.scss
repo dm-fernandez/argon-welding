@@ -7,10 +7,13 @@
 @import "./base/fonts";
 @import "./base/common";
 @import "./base/typography";
+@import "./base/animations";
 
 @import "./components/button";
 @import "./components/social-network";
 @import "./components/phone-block";
+@import "./components/checkbox";
+@import "./components/input";
 
 @import "./layout/container";
 @import "./layout/header";
@@ -19,3 +22,4 @@
 @import "./layout/weld-features";
 @import "./layout/gallery";
 @import "./layout/guarantee";
+@import "./layout/feedback";
