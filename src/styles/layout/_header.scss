@@ -44,16 +44,15 @@
 }
 
 .header__logo {
+  width: px2rem(100);
   margin-bottom: 8vh;
 
-  @media (min-width: $bp-lg) {
-    margin: 0;
-  }
-}
-
-.header__logo-img {
   @media (min-width: $bp-md) {
     width: px2rem(140);
+  }
+
+  @media (min-width: $bp-lg) {
+    margin-bottom: 0;
   }
 }
 
