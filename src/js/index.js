@@ -1,3 +1,3 @@
-import testModule from './modules/testModule';
+import accordionListener from './modules/accordion';
 
-testModule(20, 20);
+accordionListener();

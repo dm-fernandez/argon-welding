@@ -38,6 +38,11 @@
           <path d="M0.423911 11.5717L5.95399 13.6357L8.09447 20.5194C8.23143 20.9603 8.77055 21.1233 9.12839 20.8307L12.211 18.3178C12.5341 18.0545 12.9943 18.0414 13.332 18.2865L18.8918 22.323C19.2746 22.6013 19.817 22.3915 19.913 21.929L23.9858 2.33768C24.0906 1.8324 23.5942 1.41088 23.113 1.59696L0.417431 10.3522C-0.142649 10.5682 -0.137769 11.3612 0.423911 11.5717ZM7.74951 12.537L18.5574 5.8804C18.7516 5.76112 18.9514 6.02376 18.7846 6.17848L9.86503 14.4697C9.55151 14.7615 9.34927 15.1521 9.29199 15.576L8.98815 17.8277C8.94791 18.1283 8.52559 18.1582 8.44263 17.8672L7.27407 13.7612C7.14023 13.2929 7.33527 12.7926 7.74951 12.537Z"/>
         </g>
       </symbol>
+      <symbol id="ic-arrow-dropdown" viewbox="0 0 24 24">
+        <g>
+          <path d="M5.88 7L12 13.1067L18.12 7L20 8.88L12 16.88L4 8.88L5.88 7Z"/>
+        </g>
+      </symbol>
     </svg>
 
     <!-- ----- NAVBAR SECTION ----- -->
@@ -258,8 +263,104 @@
       <div class="container">
         <h2 class="faq__title section-title">Frequently asked questions</h2>
         <p class="faq__description paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, nostrum. Libero voluptatibus repellat fugit perspiciatis accusamus corporis nostrum voluptas, veniam et consectetur molestiae incidunt sunt, assumenda aliquam enim dolore quaerat!</p>
-        <div>
-          Accordions will be here
+        <div class="faq__accordion accordion" id="accordion-faq">
+
+          <div class="accordion__item">
+            <h3 class="accordion__header subtitle">
+              <button class="accordion__button" aria-expanded="false">
+                How do we calculate the cost?
+                <svg class="accodrion__icon" viewbox="0 0 24 24" aria-hidden="true">
+                  <path class="icon-path" d="M5.88 7L12 13.1067L18.12 7L20 8.88L12 16.88L4 8.88L5.88 7Z"/>
+                </svg>
+              </button>
+            </h3>
+            <div class="accordion__body some collapsed">
+              <p class="accordion__inner-content paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis nesciunt sapiente non rerum iusto possimus distinctio voluptate explicabo, expedita molestias consectetur numquam sequi exercitationem, corporis accusamus repudiandae qui? Ea, eligendi!
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3 class="accordion__header subtitle">
+              <button class="accordion__button" aria-expanded="false">
+                Can you weld a black iron?
+                <svg class="accodrion__icon" viewbox="0 0 24 24" aria-hidden="true">
+                  <path class="icon-path" d="M5.88 7L12 13.1067L18.12 7L20 8.88L12 16.88L4 8.88L5.88 7Z"/>
+                </svg>
+              </button>
+            </h3>
+            <div class="accordion__body collapsed">
+              <p class="accordion__inner-content paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis nesciunt sapiente non rerum iusto possimus distinctio voluptate explicabo, expedita molestias consectetur numquam sequi exercitationem, corporis accusamus repudiandae qui? Ea, eligendi!
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3 class="accordion__header subtitle">
+              <button class="accordion__button" aria-expanded="false">
+                How to place an order?
+                <svg class="accodrion__icon" viewbox="0 0 24 24" aria-hidden="true">
+                  <path class="icon-path" d="M5.88 7L12 13.1067L18.12 7L20 8.88L12 16.88L4 8.88L5.88 7Z"/>
+                </svg>
+              </button>
+            </h3>
+            <div class="accordion__body collapsed">
+              <p class="accordion__inner-content paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis nesciunt sapiente non rerum iusto possimus distinctio voluptate explicabo, expedita molestias consectetur numquam sequi exercitationem, corporis accusamus repudiandae qui? Ea, eligendi!
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3 class="accordion__header subtitle">
+              <button class="accordion__button" aria-expanded="false">
+                Do you work on weekends?
+                <svg class="accodrion__icon" viewbox="0 0 24 24" aria-hidden="true">
+                  <path class="icon-path" d="M5.88 7L12 13.1067L18.12 7L20 8.88L12 16.88L4 8.88L5.88 7Z"/>
+                </svg>
+              </button>
+            </h3>
+            <div class="accordion__body collapsed">
+              <p class="accordion__inner-content paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis nesciunt sapiente non rerum iusto possimus distinctio voluptate explicabo, expedita molestias consectetur numquam sequi exercitationem, corporis accusamus repudiandae qui? Ea, eligendi!
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3 class="accordion__header subtitle">
+              <button class="accordion__button" aria-expanded="false">
+                Do I need to pay for departure?
+                <svg class="accodrion__icon" viewbox="0 0 24 24" aria-hidden="true">
+                  <path class="icon-path" d="M5.88 7L12 13.1067L18.12 7L20 8.88L12 16.88L4 8.88L5.88 7Z"/>
+                </svg>
+              </button>
+            </h3>
+            <div class="accordion__body collapsed">
+              <p class="accordion__inner-content paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis nesciunt sapiente non rerum iusto possimus distinctio voluptate explicabo, expedita molestias consectetur numquam sequi exercitationem, corporis accusamus repudiandae qui? Ea, eligendi!
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3 class="accordion__header subtitle">
+              <button class="accordion__button" aria-expanded="false">
+                Can you help me, if I do not know what I want exactly?
+                <svg class="accodrion__icon" viewbox="0 0 24 24" aria-hidden="true">
+                  <path class="icon-path" d="M5.88 7L12 13.1067L18.12 7L20 8.88L12 16.88L4 8.88L5.88 7Z"/>
+                </svg>
+              </button>
+            </h3>
+            <div class="accordion__body collapsed">
+              <p class="accordion__inner-content paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis nesciunt sapiente non rerum iusto possimus distinctio voluptate explicabo, expedita molestias consectetur numquam sequi exercitationem, corporis accusamus repudiandae qui? Ea, eligendi!
+              </p>
+            </div>
+          </div>
+
         </div>
         <a class="header__btn btn" href="#">Submit a request</a>
       </div>
