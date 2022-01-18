@@ -38,11 +38,6 @@
           <path d="M0.423911 11.5717L5.95399 13.6357L8.09447 20.5194C8.23143 20.9603 8.77055 21.1233 9.12839 20.8307L12.211 18.3178C12.5341 18.0545 12.9943 18.0414 13.332 18.2865L18.8918 22.323C19.2746 22.6013 19.817 22.3915 19.913 21.929L23.9858 2.33768C24.0906 1.8324 23.5942 1.41088 23.113 1.59696L0.417431 10.3522C-0.142649 10.5682 -0.137769 11.3612 0.423911 11.5717ZM7.74951 12.537L18.5574 5.8804C18.7516 5.76112 18.9514 6.02376 18.7846 6.17848L9.86503 14.4697C9.55151 14.7615 9.34927 15.1521 9.29199 15.576L8.98815 17.8277C8.94791 18.1283 8.52559 18.1582 8.44263 17.8672L7.27407 13.7612C7.14023 13.2929 7.33527 12.7926 7.74951 12.537Z"/>
         </g>
       </symbol>
-      <symbol id="ic-arrow-dropdown" viewbox="0 0 24 24">
-        <g>
-          <path d="M5.88 7L12 13.1067L18.12 7L20 8.88L12 16.88L4 8.88L5.88 7Z"/>
-        </g>
-      </symbol>
     </svg>
 
     <!-- ----- NAVBAR SECTION ----- -->
@@ -177,25 +172,73 @@
 
 
 
-
-
     <!-- ----- WELDING FEATURES SECTION ----- -->
 
     <section class="weld-features">
       <div class="container">
         <h2 class="weld-features__title section-title">Features of the argon welding</h2>
-        <div class="weld-features__slider slider">
-          <img class="slider__image responsive-img" src="img/weld-feature-01.jpg" alt="Man is welding">
-          <div>
-            <button class="slider__btn btn-slider btn" type="button">Left</button>
-            <button class="slider__btn btn-slider btn" type="button">Right</button>
+
+        <div class="weld-features__slider slider" id="weld-features-slider">
+          <div class="weld-features__swiper slider-primary swiper">
+            <div class="slider__wrapper swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="responsive-img" src="img/weld-feature-01.jpg" alt="img">
+              </div>
+              <div class="swiper-slide">
+                <img class="responsive-img" src="img/weld-feature-02.jpg" alt="img">
+              </div>
+              <div class="swiper-slide">
+                <img class="responsive-img" src="img/weld-feature-03.jpg" alt="img">
+              </div>
+              <div class="swiper-slide">
+                <img class="responsive-img" src="img/weld-feature-04.jpg" alt="img">
+              </div>
+              <div class="swiper-slide">
+                <img class="responsive-img" src="img/weld-feature-05.jpg" alt="img">
+              </div>
+            </div>
+            <div class="slider__pagination swiper-pagination"></div>
+            <div class="slider__btn-group">
+              <button class="slider__btn btn-left swiper-button-prev"></button>
+              <button class="slider__btn btn-right swiper-button-next"></button>
+            </div>
           </div>
-          <span class="slider__counter">1 / 7</span>
-          <h3 class="slider__title-slide">Slide's title</h3>
-          <p class="slider__description-slide paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptas exercitationem nam, eaque deserunt consequatur iusto atque eius sed iure voluptatum sunt delectus rerum alias vitae repudiandae autem pariatur molestiae.
-          </p>
+          <div class="weld-features__swiper-thumbs slider-secondary swiper swiper-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h3 class="slider__title subtitle">High speed of work</h3>
+                <p class="slider__description paragraph">
+                  Argon welding combines the features of gas and electric arc. From the gas to the technological process, a number of techniques have been taken for creating an integral connection and the use of gas, and from the electric arc, the use of an electric arc.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="slider__title subtitle">No deformation</h3>
+                <p class="slider__description paragraph">
+                  There are a number of features inherent in the welding of most non-ferrous metals, as well as their alloys and alloy steels. They consist in the interaction of molten metals with the air surrounding them: oxygen and its impurities. Being in the molten state, metals begin to actively oxidize.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="slider__title subtitle">Neat and thin enough seam</h3>
+                <p class="slider__description paragraph">
+                  The second most common is argon arc welding. It is widely used in industry. It is carried out both by manual and automatic methods using tungsten piece electrodes and filler wire. Specialists consider this welding more complicated and time-consuming than argon.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="slider__title subtitle">Lack of filler material</h3>
+                <p class="slider__description paragraph">
+                  The disadvantage of argon welding is the impossibility of conducting it in the open air in the presence of strong wind. Argon is carried by the wind, therefore, it does not protect the seam well, so the latter can be of poor quality.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="slider__title subtitle">Relatively low welding temperature</h3>
+                <p class="slider__description paragraph">
+                  In enclosed spaces, welding should only be carried out using forced ventilation. In addition, if it is necessary to use a high-ampere welding arc, it is necessary to decide in advance how the seam will be cooled during work.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
     </section>
 
@@ -380,18 +423,88 @@
     <section class="reviews">
       <div class="container">
         <h2 class="reviews__title section-title">What our clients think about us</h2>
-        <div class="reviews__slider slider">
-          <img class="slider__image responsive-img" src="img/review-01.jpg" alt="img slider">
-          <div>
-            <button class="slider__btn btn-slider btn" type="button">Left</button>
-            <button class="slider__btn btn-slider btn" type="button">Right</button>
+
+        <div class="reviews__slider slider" id="reviews-slider">
+          <div class="reviews__swiper slider-primary swiper">
+            <div class="slider__wrapper swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="responsive-img" src="img/review-01.jpg" alt="img">
+              </div>
+              <div class="swiper-slide">
+                <img class="responsive-img" src="img/review-02.jpg" alt="img">
+              </div>
+              <div class="swiper-slide">
+                <img class="responsive-img" src="img/review-03.jpg" alt="img">
+              </div>
+              <div class="swiper-slide">
+                <img class="responsive-img" src="img/review-04.jpg" alt="img">
+              </div>
+              <div class="swiper-slide">
+                <img class="responsive-img" src="img/review-05.jpg" alt="img">
+              </div>
+              <div class="swiper-slide">
+                <img class="responsive-img" src="img/review-06.jpg" alt="img">
+              </div>
+            </div>
+            <div class="slider__pagination swiper-pagination"></div>
+            <div class="slider__btn-group">
+              <button class="slider__btn btn-left swiper-button-prev"></button>
+              <button class="slider__btn btn-right swiper-button-next"></button>
+            </div>
           </div>
-          <span class="slider__counter">1 / 7</span>
-          <h3 class="slider__title-slide">Slide's title</h3>
-          <p class="slider__description-slide paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptas exercitationem nam, eaque deserunt consequatur iusto atque eius sed iure voluptatum sunt delectus rerum alias vitae repudiandae autem pariatur molestiae.
-          </p>
+          <div class="reviews__swiper-thumbs slider-secondary swiper swiper-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider__zoom-container swiper-zoom-container">
+                  <h3 class="slider__title subtitle">Micheal Reid</h3>
+                  <p class="slider__description paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc non blandit massa enim nec dui nunc mattis enim. Urna duis convallis convallis tellus id interdum velit laoreet id.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="slider__title subtitle">Dave Sellers</h3>
+                <p class="slider__description paragraph">
+                  Varius quam quisque id diam. Fringilla urna porttitor rhoncus dolor purus non. Dui sapien eget mi proin sed libero enim. In arcu cursus euismod quis viverra nibh cras pulvinar.
+                </p>
+                <p class="slider__description paragraph">
+                  Massa sed elementum tempus egestas sed sed risus pretium. Enim nec dui nunc mattis enim ut tellus. In fermentum posuere urna nec tincidunt. In tellus integer feugiat scelerisque varius morbi enim nunc.
+                </p>
+                <p class="slider__description paragraph">
+                  Eget nunc lobortis mattis aliquam faucibus purus in. Blandit turpis cursus in hac habitasse platea dictumst quisque. Donec pretium vulputate sapien nec sagittis aliquam. Viverra aliquet eget sit amet tellus cras.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="slider__title subtitle">Howard Reynolds</h3>
+                <p class="slider__description paragraph">
+                  Gravida in fermentum et sollicitudin ac orci phasellus egestas. Quam elementum pulvinar etiam non quam.Porta lorem mollis aliquam ut porttitor leo a.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="slider__title subtitle">Mitchell Gallagher</h3>
+                <p class="slider__description paragraph">
+                  Mauris rhoncus aenean vel elit scelerisque mauris. Nunc aliquet bibendum enim facilisis gravida neque convallis. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Feugiat vivamus at augue eget.
+                </p>
+                <p class="slider__description paragraph">
+                  Metus vulputate eu scelerisque felis imperdiet proin fermentum. Mauris commodo quis imperdiet massa. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Bibendum arcu vitae elementum curabitur vitae nunc sed velit.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="slider__title subtitle">Matt Oliver</h3>
+                <p class="slider__description paragraph">
+                  Tristique senectus et netus et malesuada fames ac turpis egestas. Parturient montes nascetur ridiculus mus mauris vitae ultricies. Diam vel quam elementum pulvinar etiam non quam lacus suspendisse. Fusce id velit ut tortor pretium viverra suspendisse.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="slider__title subtitle">Alex Stone</h3>
+                <p class="slider__description paragraph">
+                  Pulvinar etiam non quam lacus. Urna neque viverra justo nec ultrices dui. Risus at ultrices mi tempus imperdiet nulla. Nunc scelerisque viverra mauris in. Dignissim sodales ut eu sem integer vitae justo eget magna.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
     </section>
 

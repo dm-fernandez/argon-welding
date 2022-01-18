@@ -50,5 +50,8 @@
     "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-scss": "^4.0.0",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "swiper": "^7.4.1"
   }
 }

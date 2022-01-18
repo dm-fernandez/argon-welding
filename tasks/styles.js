@@ -18,9 +18,7 @@ export const taskStyles = () => gulp.src(config.src.styles, { sourcemaps: config
     title: 'SCSS',
     message: 'Error: <%= error.message %>',
   })))
-  .pipe(sass({
-    includePaths: ['../node_modules/'],
-  }))
+  .pipe(sass())
   .pipe(gulpIf(config.isProd, postcss([
     mqpacker({
       sort: sortMediaQueries,

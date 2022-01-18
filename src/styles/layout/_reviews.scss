@@ -1,7 +1,7 @@
 @import "../utilities/variables";
 @import "../utilities/functions";
 
-.weld-features {
+.reviews {
   margin-bottom: $margin-section-xs;
 
   @media (min-width: $bp-lg) {
@@ -9,7 +9,7 @@
   }
 }
 
-.weld-features__title {
+.reviews__title {
   margin-bottom: px2rem(24);
 
   @media (min-width: $bp-lg) {
