@@ -26,7 +26,7 @@ function accordionToggler(evt) {
   const currentButton = currentElement.querySelector('.accordion__button');
   const currentBody = currentElement.querySelector('.accordion__body');
   const currentIcon = currentElement.querySelector('.accodrion__icon');
-  const currentAria = currentButton.getAttribute('aria-expanded');
+  const currentAria = currentButton.getAttribute(ATTR_ARIA);
 
   if (currentAria === 'false') {
     disableAllAria(buttons);

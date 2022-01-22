@@ -40,14 +40,70 @@
       </symbol>
     </svg>
 
+
+
     <!-- ----- NAVBAR SECTION ----- -->
-    <!-- <nav class="navbar"></nav> -->
+
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__content-wrapper">
+
+          <div class="navbar__control-wrapper">
+            <img class="navbar__logo" src="img/svg/aw-logo.svg" width="72" alt="Logo">
+            <button class="navbar__btn-menu-toggler btn-menu-toggler" type="button" aria-expanded="false">
+              <svg class="btn-menu-toggler__container" width="56" height="56" viewbox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+                <rect class="btn-menu-toggler__line top" x="8" y="16" width="40" height="4"/>
+                <rect class="btn-menu-toggler__line middle" x="8" y="26" width="40" height="4"/>
+                <rect class="btn-menu-toggler__line bottom" x="8" y="36" width="40" height="4"/>
+              </svg>
+            </button>
+          </div>
+
+          <div class="navbar__nav-wrapper">
+            <ul class="navbar__navlist">
+              <li class="navbar__navlist-item">
+                <a class="navbar__navlist-link" href="#about">About us</a>
+              </li>
+              <li class="navbar__navlist-item">
+                <a class="navbar__navlist-link" href="#features">Features</a>
+              </li>
+              <li class="navbar__navlist-item">
+                <a class="navbar__navlist-link" href="#weld-features">Weld features</a>
+              </li>
+              <li class="navbar__navlist-item">
+                <a class="navbar__navlist-link" href="#gallery">Projects</a>
+              </li>
+              <li class="navbar__navlist-item">
+                <a class="navbar__navlist-link" href="#guarantee">Guarantees</a>
+              </li>
+              <li class="navbar__navlist-item">
+                <a class="navbar__navlist-link" href="#faq">FAQ</a>
+              </li>
+              <li class="navbar__navlist-item">
+                <a class="navbar__navlist-link" href="#reviews">Reviews</a>
+              </li>
+              <li class="navbar__navlist-item">
+                <a class="navbar__navlist-link" href="#feedback">Feedback</a>
+              </li>
+              <li class="navbar__navlist-item">
+                <a class="navbar__navlist-link" href="#footer">Contacts</a>
+              </li>
+            </ul>
+            <div class="navbar__phone-block phone-block">
+              <a class="phone-block__number" href="tel:+380695824959">+38 069 582 49 59</a>
+              <a class="phone-block__callback" href="#">Call me back</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </nav>
 
 
 
     <!-- ----- HEADER SECTION ----- -->
 
-    <header class="header">
+    <header class="header observer">
       <div class="container">
 
         <nav class="header__nav">
@@ -88,7 +144,7 @@
           <p class="header__description paragraph">
             Structures of any complexity<br>at competitive prices
           </p>
-          <a class="header__btn btn" data-text="Submit a request" href="#">
+          <a class="header__btn btn" data-text="Submit a request" href="#feedback">
             <span class="btn__text">Submit a request</span>
           </a>
         </section>
@@ -100,7 +156,7 @@
 
     <!-- ----- ABOUT SECTION ----- -->
 
-    <section class="about">
+    <section class="about observer" id="about">
       <div class="container">
         <h2 class="about__title section-title">About us</h2>
         <div class="about__content-blocks-wrapper">
@@ -125,7 +181,7 @@
 
     <!-- ----- FEATURES SECTION ----- -->
 
-    <section class="features">
+    <section class="features observer" id="features">
       <div class="container">
         <h2 class="features__title section-title">Our features</h2>
         <div class="features__feature-blocks">
@@ -165,7 +221,7 @@
         </div>
 
         <div class="flex-container">
-          <a class="features__btn btn" href="#">Submit a request</a>
+          <a class="features__btn btn" href="#feedback">Submit a request</a>
         </div>
       </div>
     </section>
@@ -174,7 +230,7 @@
 
     <!-- ----- WELDING FEATURES SECTION ----- -->
 
-    <section class="weld-features">
+    <section class="weld-features observer" id="weld-features">
       <div class="container">
         <h2 class="weld-features__title section-title">Features of the argon welding</h2>
 
@@ -246,7 +302,7 @@
 
     <!-- ----- GALLERY SECTION ----- -->
 
-    <section class="gallery">
+    <section class="gallery observer" id="gallery">
       <div class="container">
         <h2 class="gallery__title section-title">Our best projects</h2>
       </div>
@@ -264,7 +320,7 @@
 
     <!-- ----- GUARANTEE SECTION ----- -->
 
-    <section class="guarantee">
+    <section class="guarantee observer" id="guarantee">
       <div class="container">
         <h2 class="guarantee__title section-title">Guarantee of quality</h2>
         <div class="guarantee__guarantee-blocks">
@@ -305,7 +361,7 @@
 
     <!-- ----- FAQ SECTION ----- -->
 
-    <section class="faq">
+    <section class="faq observer" id="faq">
       <div class="container">
         <div class="faq__description-wrapper">
           <h2 class="faq__title section-title">Frequently asked questions</h2>
@@ -411,7 +467,7 @@
 
         </div>
         <div class="flex-container">
-          <a class="faq__btn btn" href="#">Submit a request</a>
+          <a class="faq__btn btn" href="#feedback">Submit a request</a>
         </div>
       </div>
     </section>
@@ -420,7 +476,7 @@
 
     <!-- ----- REVIEWS SECTION ----- -->
 
-    <section class="reviews">
+    <section class="reviews observer" id="reviews">
       <div class="container">
         <h2 class="reviews__title section-title">What our clients think about us</h2>
 
@@ -512,7 +568,7 @@
 
     <!-- ----- FEEDBACK SECTION ----- -->
 
-    <section class="feedback">
+    <section class="feedback observer" id="feedback">
       <div class="container">
         <div class="feedback__fluid-container">
           <div class="feedback__description-block">
@@ -552,7 +608,7 @@
 
     <!-- ----- FOOTER SECTION ----- -->
 
-    <footer class="footer">
+    <footer class="footer observer" id="footer">
       <div class="container">
         <div class="footer__nav">
 

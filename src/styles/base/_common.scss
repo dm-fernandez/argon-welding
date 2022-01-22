@@ -17,6 +17,10 @@ body {
   background-color: $color-surface-dark;
 }
 
+.scroll-disable {
+  overflow: hidden;
+}
+
 .responsive-img {
   width: 100%;
   height: auto;

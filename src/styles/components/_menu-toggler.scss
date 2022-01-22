@@ -1,0 +1,60 @@
+@import "../utilities/variables";
+@import "../utilities/functions";
+@import "../utilities/mixins";
+
+.btn-menu-toggler {
+  @include remove-indents;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+
+  @media (min-width: $bp-lg) {
+    display: none;
+  }
+}
+
+.btn-menu-toggler__container {
+  fill: $color-onsurface-light;
+}
+
+.btn-menu-toggler__line {
+  @include transition([transform, opacity], 0.3);
+  transform-origin: center center;
+}
+
+.btn-menu-toggler__line.middle {
+  @include transition(opacity, 0.3);
+  opacity: 100%;
+}
+
+
+// Transform lines to active state
+.btn-menu-toggler--show {
+  .btn-menu-toggler__line.bottom {
+    animation: bottom-line-active 0.6s ease forwards;
+  }
+
+  .btn-menu-toggler__line.top {
+    animation: top-line-active 0.6s ease forwards;
+  }
+
+  .btn-menu-toggler__line.middle {
+    opacity: 0%;
+  }
+}
+
+
+// Transform lines to default state
+.btn-menu-toggler--hide {
+  .btn-menu-toggler__line.bottom {
+    animation: bottom-line-default 0.6s ease forwards;
+  }
+
+  .btn-menu-toggler__line.top {
+    animation: top-line-default 0.6s ease forwards;
+  }
+}
