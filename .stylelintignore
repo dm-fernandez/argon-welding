@@ -1,2 +1,2 @@
-src/styles/vendors/*.*
+src/styles/base/_normalize.scss
 node_modules
