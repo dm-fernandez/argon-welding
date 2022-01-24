@@ -8,11 +8,37 @@
 }
 
 .phone-block__number {
+  position: relative;
   display: block;
   font-size: px2rem(24);
   font-weight: 600;
   color: $color-text-primary;
   text-decoration: none;
+
+  @media (min-width: $bp-lg) {
+    &::before {
+      @include transition([opacity, left], 0.3);
+      position: absolute;
+      top: 2px;
+      left: px2rem(-32);
+      width: px2rem(40);
+      height: px2rem(40);
+      content: "";
+      background-image: url("../img/svg/ic-phone.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 0%;
+    }
+
+    &:hover,
+    &:focus {
+      &::before {
+        left: px2rem(-52);
+        opacity: 100%;
+      }
+    }
+  }
 }
 
 .phone-block__callback {
@@ -26,6 +52,7 @@
   letter-spacing: px2rem(3);
 
   &::before {
+    @include transition(width, 0.3);
     position: absolute;
     right: 0;
     bottom: 0;
@@ -33,10 +60,10 @@
     height: 2px;
     content: "";
     background-color: $color-onsurface-light;
-    @include transition(width, 0.3);
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     width: 100%;
   }
 }

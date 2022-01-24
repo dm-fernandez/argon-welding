@@ -27,6 +27,7 @@
   background-color: $color-surface-light-opacity;
   border: 0;
 
+  &:hover,
   &:focus {
     border-left: 2px solid $color-surface-light;
     outline: none;

@@ -4,6 +4,7 @@
 // Colors ------------------------------------- //
 // -------------------------------------------- //
 $black: rgb(17 17 17);
+$lighten-black: rgb(34 34 34);
 $white: rgb(248 248 248);
 $grey: rgb(176 176 176);
 $black-opacity: rgb(17 17 17 / 64%);
@@ -17,12 +18,11 @@ $color-text-dark: $black;
 
 $color-surface-dark: $black;
 $color-surface-light: $white;
-
-
 $color-surface-dark-opacity: $black-opacity;
 $color-surface-light-opacity: $white-opacity;
 
 $color-onsurface-dark: $black;
+$color-onsurface-lighten-dark: $lighten-black;
 $color-onsurface-light: $white;
 $color-onsurface-grey: $grey;
 
