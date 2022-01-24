@@ -7,6 +7,7 @@ import counterInit from './modules/counter';
 import accordionListener from './modules/accordion';
 import phoneInputMask from './modules/phoneInputMask';
 import imageHoverEffectListener from './modules/imageHoverEffect';
+import callMeBack from './modules/callMeBack';
 import swiperInit from './modules/swiper';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   accordionListener();
   phoneInputMask();
   imageHoverEffectListener();
+  callMeBack();
   swiperInit('weld-features-slider');
   swiperInit('reviews-slider');
 });
