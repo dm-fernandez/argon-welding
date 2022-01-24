@@ -5,6 +5,7 @@
   position: relative;
   width: 100vw;
   height: 100vh;
+  min-height: px2rem(600);
   margin-bottom: 4vh;
   background-image: url("../img/argon-welding-cover-01-mobile.jpg");
   background-repeat: no-repeat;
@@ -94,6 +95,7 @@
 .header__description {
   margin-bottom: 20vh;
   font-size: px2rem(20);
+  line-height: 150%;
   color: $color-text-primary;
   text-align: center;
 

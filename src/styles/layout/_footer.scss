@@ -56,6 +56,7 @@
 }
 
 .footer__mail-link {
+  position: relative;
   font-size: px2rem(20);
   color: $color-text-primary;
   text-align: center;
@@ -63,6 +64,29 @@
 
   @media (min-width: $bp-lg) {
     text-align: right;
+
+    &::before {
+      @include transition([opacity, left], 0.3);
+      position: absolute;
+      top: px2rem(-4);
+      left: px2rem(-32);
+      width: px2rem(40);
+      height: px2rem(40);
+      content: "";
+      background-image: url("../img/svg/ic-mail.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 0%;
+    }
+
+    &:hover,
+    &:focus {
+      &::before {
+        left: px2rem(-52);
+        opacity: 100%;
+      }
+    }
   }
 }
 

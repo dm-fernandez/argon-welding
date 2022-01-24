@@ -6,7 +6,7 @@
   position: relative;
   padding-top: px2rem(120);
   margin-bottom: $margin-section-xs;
-  overflow-x: hidden;
+  overflow: hidden;
 
   &::before {
     position: absolute;
