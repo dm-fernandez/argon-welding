@@ -6,6 +6,7 @@ const sections = document.querySelectorAll('.observer');
 const listLinks = navbar.querySelector('.navbar__nav-wrapper');
 const links = listLinks.querySelectorAll('.navbar__navlist-link');
 const breakpointMenu = window.matchMedia('(max-width: 960px)');
+const observerOptions = { threshold: 0.7 };
 
 function getFormattedId(el) {
   return el.getAttribute('href').replace('#', '');
@@ -19,9 +20,7 @@ const observerNavbar = new IntersectionObserver((entries) => {
       navbar.classList.remove('navbar--scrolled');
     }
   });
-}, {
-  threshold: 0.1,
-});
+}, observerOptions);
 
 const observerLinks = new IntersectionObserver((entries) => {
   entries.forEach((entryItem) => {
@@ -32,9 +31,7 @@ const observerLinks = new IntersectionObserver((entries) => {
       });
     }
   });
-}, {
-  threshold: 0.7,
-});
+}, observerOptions);
 
 function clickHandler(evt) {
   const currentEl = evt.target;
@@ -55,7 +52,5 @@ function clickHandler(evt) {
 export default function navbarObserverInit() {
   observerNavbar.observe(header);
   sections.forEach((item) => observerLinks.observe(item));
-  listLinks.addEventListener('click', (evt) => {
-    clickHandler(evt);
-  });
+  listLinks.addEventListener('click', clickHandler);
 }

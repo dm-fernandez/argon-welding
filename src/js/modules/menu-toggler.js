@@ -56,5 +56,5 @@ export function menuInit() {
 }
 
 export function menuTogglerListener() {
-  document.querySelector('.btn-menu-toggler').addEventListener('click', () => menuInit());
+  document.querySelector('.btn-menu-toggler').addEventListener('click', menuInit);
 }
