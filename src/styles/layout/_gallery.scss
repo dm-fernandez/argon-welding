@@ -35,4 +35,9 @@
 
 .gallery__image {
   vertical-align: bottom;
+  filter: grayscale(0) blur(0);
+}
+
+.hoverEffect {
+  filter: grayscale(100%) blur(2px);
 }

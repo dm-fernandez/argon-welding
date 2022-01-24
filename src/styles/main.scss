@@ -1,8 +1,9 @@
 // -------------------------------------------- //
 // Final file --------------------------------- //
 // -------------------------------------------- //
-@import "./vendors/normalize";
+@import "./base/normalize";
 
+@import "../../node_modules/aos/src/sass/aos";
 @import "../../node_modules/swiper/swiper";
 @import "../../node_modules/swiper/modules/effect-coverflow/effect-coverflow";
 @import "../../node_modules/swiper/modules/effect-fade/effect-fade";
@@ -14,6 +15,7 @@
 
 @import "./components/menu-toggler";
 @import "./components/button";
+@import "./components/button-scroll-top";
 @import "./components/social-network";
 @import "./components/phone-block";
 @import "./components/checkbox";

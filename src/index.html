@@ -38,6 +38,11 @@
           <path d="M0.423911 11.5717L5.95399 13.6357L8.09447 20.5194C8.23143 20.9603 8.77055 21.1233 9.12839 20.8307L12.211 18.3178C12.5341 18.0545 12.9943 18.0414 13.332 18.2865L18.8918 22.323C19.2746 22.6013 19.817 22.3915 19.913 21.929L23.9858 2.33768C24.0906 1.8324 23.5942 1.41088 23.113 1.59696L0.417431 10.3522C-0.142649 10.5682 -0.137769 11.3612 0.423911 11.5717ZM7.74951 12.537L18.5574 5.8804C18.7516 5.76112 18.9514 6.02376 18.7846 6.17848L9.86503 14.4697C9.55151 14.7615 9.34927 15.1521 9.29199 15.576L8.98815 17.8277C8.94791 18.1283 8.52559 18.1582 8.44263 17.8672L7.27407 13.7612C7.14023 13.2929 7.33527 12.7926 7.74951 12.537Z"/>
         </g>
       </symbol>
+      <symbol id="ic-arrow-top" viewbox="0 0 24 24">
+        <g>
+          <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/>
+        </g>
+      </symbol>
     </svg>
 
 
@@ -99,21 +104,25 @@
       </div>
     </nav>
 
-
+    <button class="btn-scroll-top" type="button">
+      <svg class="social-network__icon" viewbox="0 0 24 24" aria-hidden="true">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-arrow-top"></use>
+      </svg>
+    </button>
 
     <!-- ----- HEADER SECTION ----- -->
 
-    <header class="header observer">
+    <header class="header observer" data-aos="fade" data-aos-duration="1000">
       <div class="container">
 
         <nav class="header__nav">
-          <img class="header__logo" src="img/svg/aw-logo.svg" width="100" alt="Logo">
+          <img class="header__logo" src="img/svg/aw-logo.svg" width="100" alt="Logo" data-aos="fade" data-aos-delay="1300">
           <div class="header__contacts-block">
-            <div class="header__phone-block phone-block">
+            <div class="header__phone-block phone-block" data-aos="fade" data-aos-delay="2100">
               <a class="phone-block__number" href="tel:+380695824959">+38 069 582 49 59</a>
               <a class="phone-block__callback" href="#">Call me back</a>
             </div>
-            <ul class="header__social-network social-network">
+            <ul class="header__social-network social-network" data-aos="fade" data-aos-delay="1600">
               <li class="social-network__item">
                 <a class="social-network__link" href="https://telegram.org/">
                   <svg class="social-network__icon" viewbox="0 0 24 24" aria-hidden="true">
@@ -139,12 +148,12 @@
           </div>
         </nav>
 
-        <section class="header__description-block">
+        <section class="header__description-block" data-aos="fade" data-aos-delay="1000">
           <h2 class="header__title section-title">Argon welding<br>in your city</h2>
           <p class="header__description paragraph">
             Structures of any complexity<br>at competitive prices
           </p>
-          <a class="header__btn btn" data-text="Submit a request" href="#feedback">
+          <a class="header__btn btn anchor-btn" data-text="Submit a request" href="#feedback">
             <span class="btn__text">Submit a request</span>
           </a>
         </section>
@@ -156,20 +165,20 @@
 
     <!-- ----- ABOUT SECTION ----- -->
 
-    <section class="about observer" id="about">
+    <section class="about observer" data-aos="fade-up" data-aos-duration="1000" id="about">
       <div class="container">
-        <h2 class="about__title section-title">About us</h2>
+        <h2 class="about__title section-title" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">About us</h2>
         <div class="about__content-blocks-wrapper">
-          <p class="about__description paragraph">
+          <p class="about__description paragraph" data-aos="fade-up" data-aos-duration="600" data-aos-delay="1000">
             Argon Welding is a service providing argon welding services. We employ highly qualified specialists with higher and specialized technical education, whose long-term experience allows us to solve problems of any complexity.
           </p>
           <div class="about__numeral-blocks">
-            <p class="about__numeral-block">
-              <span class="about__numbers">1192</span><br>
+            <p class="about__numeral-block" data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">
+              <span class="about__numbers" id="counter-projects">1192</span><br>
               Successful projects
             </p>
-            <p class="about__numeral-block">
-              <span class="about__numbers">862</span><br>
+            <p class="about__numeral-block" data-aos="fade-up" data-aos-duration="600" data-aos-delay="750">
+              <span class="about__numbers" id="counter-customers">862</span><br>
               Satisfied customers
             </p>
           </div>
@@ -183,45 +192,45 @@
 
     <section class="features observer" id="features">
       <div class="container">
-        <h2 class="features__title section-title">Our features</h2>
+        <h2 class="features__title section-title" data-aos="fade-up">Our features</h2>
         <div class="features__feature-blocks">
 
-          <div class="features__feature-block">
-            <img class="features__icon" src="img/svg/ic-services.svg" width="80" alt="Icon">
-            <h3 class="features__feature-title subtitle">Services</h3>
-            <p class="features__description small-paragraph">
+          <div class="features__feature-block" data-aos="fade" data-aos-delay="80">
+            <img class="features__icon" src="img/svg/ic-services.svg" width="80" alt="Icon" data-aos="fade-up" data-aos-delay="150">
+            <h3 class="features__feature-title subtitle" data-aos="fade-up" data-aos-delay="200">Services</h3>
+            <p class="features__description small-paragraph" data-aos="fade-up" data-aos-delay="250">
               We weld in the workshop<br>and on site to the customer
             </p>
           </div>
 
-          <div class="features__feature-block">
-            <img class="features__icon" src="img/svg/ic-collaboration.svg" width="80" alt="Icon">
-            <h3 class="features__feature-title subtitle">Control</h3>
-            <p class="features__description small-paragraph">
+          <div class="features__feature-block" data-aos="fade" data-aos-delay="120">
+            <img class="features__icon" src="img/svg/ic-collaboration.svg" width="80" alt="Icon" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="features__feature-title subtitle" data-aos="fade-up" data-aos-delay="200">Control</h3>
+            <p class="features__description small-paragraph" data-aos="fade-up" data-aos-delay="250">
               You can watch the progress<br>of your order
             </p>
           </div>
 
-          <div class="features__feature-block">
-            <img class="features__icon" src="img/svg/ic-like.svg" width="80" alt="Icon">
-            <h3 class="features__feature-title subtitle">Quality</h3>
-            <p class="features__description small-paragraph">
+          <div class="features__feature-block" data-aos="fade" data-aos-delay="120">
+            <img class="features__icon" src="img/svg/ic-like.svg" width="80" alt="Icon" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="features__feature-title subtitle" data-aos="fade-up" data-aos-delay="200">Quality</h3>
+            <p class="features__description small-paragraph" data-aos="fade-up" data-aos-delay="250">
               We do not spare money<br>for quality metal
             </p>
           </div>
 
-          <div class="features__feature-block">
-            <img class="features__icon" src="img/svg/ic-speed.svg" width="80" alt="Icon">
-            <h3 class="features__feature-title subtitle">Speed</h3>
-            <p class="features__description small-paragraph">
+          <div class="features__feature-block" data-aos="fade" data-aos-delay="80">
+            <img class="features__icon" src="img/svg/ic-speed.svg" width="80" alt="Icon" data-aos="fade-up" data-aos-delay="150">
+            <h3 class="features__feature-title subtitle" data-aos="fade-up" data-aos-delay="200">Speed</h3>
+            <p class="features__description small-paragraph" data-aos="fade-up" data-aos-delay="250">
               We always do our job efficiently<br>and on time
             </p>
           </div>
 
         </div>
 
-        <div class="flex-container">
-          <a class="features__btn btn" href="#feedback">Submit a request</a>
+        <div class="flex-container" data-aos="fade-up" data-aos-delay="300">
+          <a class="features__btn btn anchor-btn" href="#feedback">Submit a request</a>
         </div>
       </div>
     </section>
@@ -230,12 +239,12 @@
 
     <!-- ----- WELDING FEATURES SECTION ----- -->
 
-    <section class="weld-features observer" id="weld-features">
+    <section class="weld-features observer" data-aos="fade-up" id="weld-features">
       <div class="container">
-        <h2 class="weld-features__title section-title">Features of the argon welding</h2>
+        <h2 class="weld-features__title section-title" data-aos="fade">Features of the argon welding</h2>
 
         <div class="weld-features__slider slider" id="weld-features-slider">
-          <div class="weld-features__swiper slider-primary swiper">
+          <div class="weld-features__swiper slider-primary swiper" data-aos="fade-up" data-aos-delay="200">
             <div class="slider__wrapper swiper-wrapper">
               <div class="swiper-slide">
                 <img class="responsive-img" src="img/weld-feature-01.jpg" alt="img">
@@ -259,7 +268,7 @@
               <button class="slider__btn btn-right swiper-button-next"></button>
             </div>
           </div>
-          <div class="weld-features__swiper-thumbs slider-secondary swiper swiper-thumbs">
+          <div class="weld-features__swiper-thumbs slider-secondary swiper swiper-thumbs" data-aos="fade-up" data-aos-delay="300">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <h3 class="slider__title subtitle">High speed of work</h3>
@@ -304,15 +313,15 @@
 
     <section class="gallery observer" id="gallery">
       <div class="container">
-        <h2 class="gallery__title section-title">Our best projects</h2>
+        <h2 class="gallery__title section-title" data-aos="fade-up">Our best projects</h2>
       </div>
       <div class="gallery__image-wrapper">
-        <img class="gallery__image responsive-img" src="img/project-01.jpg" alt="project img">
-        <img class="gallery__image responsive-img" src="img/project-02.jpg" alt="project img">
-        <img class="gallery__image responsive-img" src="img/project-03.jpg" alt="project img">
-        <img class="gallery__image responsive-img" src="img/project-04.jpg" alt="project img">
-        <img class="gallery__image responsive-img" src="img/project-05.jpg" alt="project img">
-        <img class="gallery__image responsive-img" src="img/project-06.jpg" alt="project img">
+        <img class="gallery__image responsive-img" src="img/project-01.jpg" alt="project img" data-aos="fade-up" >
+        <img class="gallery__image responsive-img" src="img/project-02.jpg" alt="project img" data-aos="fade-up" data-aos-duration="700">
+        <img class="gallery__image responsive-img" src="img/project-03.jpg" alt="project img" data-aos="fade-up" data-aos-duration="800">
+        <img class="gallery__image responsive-img" src="img/project-04.jpg" alt="project img" data-aos="fade-up" data-aos-duration="900">
+        <img class="gallery__image responsive-img" src="img/project-05.jpg" alt="project img" data-aos="fade-up" data-aos-duration="1000">
+        <img class="gallery__image responsive-img" src="img/project-06.jpg" alt="project img" data-aos="fade-up" data-aos-duration="1100">
       </div>
     </section>
 
@@ -322,33 +331,33 @@
 
     <section class="guarantee observer" id="guarantee">
       <div class="container">
-        <h2 class="guarantee__title section-title">Guarantee of quality</h2>
+        <h2 class="guarantee__title section-title" data-aos="fade">Guarantee of quality</h2>
         <div class="guarantee__guarantee-blocks">
 
-          <div class="guarantee__guarantee-block block-1">
-            <img class="guarantee__icon" src="img/svg/ic-guarantee.svg" width="80" alt="Icon">
-            <p class="guarantee__description small-paragraph">
+          <div class="guarantee__guarantee-block block-1" data-aos="fade" data-aos-delay="120">
+            <img class="guarantee__icon" src="img/svg/ic-guarantee.svg" width="80" alt="Icon" data-aos="fade-up" data-aos-delay="150">
+            <p class="guarantee__description small-paragraph" data-aos="fade-up" data-aos-delay="200">
               We are always ready to quickly fix the work or replace a defective or damaged construction, or compensate for the damage financially.
             </p>
           </div>
 
-          <div class="guarantee__guarantee-block block-2">
-            <img class="guarantee__icon" src="img/svg/ic-guarantee.svg" width="80" alt="Icon">
-            <p class="guarantee__description small-paragraph">
+          <div class="guarantee__guarantee-block block-2" data-aos="fade" data-aos-delay="150">
+            <img class="guarantee__icon" src="img/svg/ic-guarantee.svg" width="80" alt="Icon" data-aos="fade-up" data-aos-delay="180">
+            <p class="guarantee__description small-paragraph" data-aos="fade" data-aos-delay="250">
               We do not spare finances for high-quality metal, which allows us to make high-quality seams and constructions. All metal has certificates.
             </p>
           </div>
 
-          <div class="guarantee__guarantee-block block-3">
-            <img class="guarantee__icon" src="img/svg/ic-guarantee.svg" width="80" alt="Icon">
-            <p class="guarantee__description small-paragraph">
+          <div class="guarantee__guarantee-block block-3" data-aos="fade" data-aos-delay="150">
+            <img class="guarantee__icon" src="img/svg/ic-guarantee.svg" width="80" alt="Icon" data-aos="fade-up" data-aos-delay="180">
+            <p class="guarantee__description small-paragraph" data-aos="fade-up" data-aos-delay="250">
               We offer the best prices for high quality, fast and accurate deadlines, which will allow you to remain satisfied.
             </p>
           </div>
 
-          <div class="guarantee__guarantee-block block-4">
-            <img class="guarantee__icon" src="img/svg/ic-guarantee.svg" width="80" alt="Icon">
-            <p class="guarantee__description small-paragraph">
+          <div class="guarantee__guarantee-block block-4" data-aos="fade" data-aos-delay="200">
+            <img class="guarantee__icon" src="img/svg/ic-guarantee.svg" width="80" alt="Icon" data-aos="fade-up" data-aos-delay="210">
+            <p class="guarantee__description small-paragraph" data-aos="fade-up" data-aos-delay="300">
               We listen to the wishes of our clients. We approach tasks strategically competently, because your success depends on it, and the success of the client is our success.
             </p>
           </div>
@@ -364,10 +373,10 @@
     <section class="faq observer" id="faq">
       <div class="container">
         <div class="faq__description-wrapper">
-          <h2 class="faq__title section-title">Frequently asked questions</h2>
-          <p class="faq__description paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, nostrum. Libero voluptatibus repellat fugit perspiciatis accusamus corporis nostrum voluptas, veniam et consectetur molestiae incidunt sunt, assumenda aliquam enim dolore quaerat!</p>
+          <h2 class="faq__title section-title" data-aos="fade-up">Frequently asked questions</h2>
+          <p class="faq__description paragraph" data-aos="fade-up" data-aos-delay="200">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, nostrum. Libero voluptatibus repellat fugit perspiciatis accusamus corporis nostrum voluptas, veniam et consectetur molestiae incidunt sunt, assumenda aliquam enim dolore quaerat!</p>
         </div>
-        <div class="faq__accordion accordion" id="accordion-faq">
+        <div class="faq__accordion accordion" id="accordion-faq" data-aos="fade-up" data-aos-delay="400">
 
           <div class="accordion__item">
             <h3 class="accordion__header subtitle">
@@ -466,8 +475,8 @@
           </div>
 
         </div>
-        <div class="flex-container">
-          <a class="faq__btn btn" href="#feedback">Submit a request</a>
+        <div class="flex-container" data-aos="fade-up" data-aos-delay="450">
+          <a class="faq__btn btn anchor-btn" href="#feedback">Submit a request</a>
         </div>
       </div>
     </section>
@@ -476,12 +485,12 @@
 
     <!-- ----- REVIEWS SECTION ----- -->
 
-    <section class="reviews observer" id="reviews">
+    <section class="reviews observer" data-aos="fade-up" id="reviews">
       <div class="container">
-        <h2 class="reviews__title section-title">What our clients think about us</h2>
+        <h2 class="reviews__title section-title" data-aos="fade">What our clients think about us</h2>
 
         <div class="reviews__slider slider" id="reviews-slider">
-          <div class="reviews__swiper slider-primary swiper">
+          <div class="reviews__swiper slider-primary swiper" data-aos="fade-up" data-aos-delay="200">
             <div class="slider__wrapper swiper-wrapper">
               <div class="swiper-slide">
                 <img class="responsive-img" src="img/review-01.jpg" alt="img">
@@ -508,7 +517,7 @@
               <button class="slider__btn btn-right swiper-button-next"></button>
             </div>
           </div>
-          <div class="reviews__swiper-thumbs slider-secondary swiper swiper-thumbs">
+          <div class="reviews__swiper-thumbs slider-secondary swiper swiper-thumbs" data-aos="fade-up" data-aos-delay="300">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="slider__zoom-container swiper-zoom-container">
@@ -568,16 +577,16 @@
 
     <!-- ----- FEEDBACK SECTION ----- -->
 
-    <section class="feedback observer" id="feedback">
+    <section class="feedback observer" data-aos="fade" data-aos-duration="1000" id="feedback">
       <div class="container">
         <div class="feedback__fluid-container">
           <div class="feedback__description-block">
-            <h2 class="feedback__title section-title">Feedback</h2>
-            <p class="feedback__description paragraph">
+            <h2 class="feedback__title section-title" data-aos="fade-up" data-aos-delay="400">Feedback</h2>
+            <p class="feedback__description paragraph" data-aos="fade-up" data-aos-delay="500">
               Leave your contact details and then,<br>within 12 minutes, we will contact you.
             </p>
           </div>
-          <form class="feedback__form" action="POST">
+          <form class="feedback__form" action="POST" data-aos="fade-up" data-aos-delay="600">
 
             <p class="feedback__input input">
               <input class="input__input input-username" id="input-username" type="text" required>
