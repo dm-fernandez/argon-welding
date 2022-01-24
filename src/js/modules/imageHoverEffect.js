@@ -1,5 +1,6 @@
 const images = document.querySelectorAll('.gallery__image');
 const imagesContainer = document.querySelector('.gallery__image-wrapper');
+const breakpointMenu = window.matchMedia('(min-width: 960px)');
 
 const hoverClass = 'hoverEffect';
 
@@ -20,6 +21,8 @@ function removeImageHoverEffect() {
 }
 
 export default function imageHoverEffectListener() {
-  imagesContainer.addEventListener('mouseover', addImageHoverEffect);
-  imagesContainer.addEventListener('mouseout', removeImageHoverEffect);
+  if (breakpointMenu.matches) {
+    imagesContainer.addEventListener('mouseover', addImageHoverEffect);
+    imagesContainer.addEventListener('mouseout', removeImageHoverEffect);
+  }
 }
