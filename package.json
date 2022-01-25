@@ -1,7 +1,7 @@
 {
-  "name": "name-project",
+  "name": "argon-welding",
   "version": "1.0.0",
-  "description": "",
+  "description": "Project for portfolio",
   "scripts": {
     "dev": "gulp serve",
     "build:dev": "gulp build",
@@ -12,7 +12,7 @@
     "eslint:fix": "eslint \"./src/**/*.js\" --fix",
     "prepare": "husky install"
   },
-  "author": "",
+  "author": "Dmitriy Fernandez",
   "license": "ISC",
   "browserslist": [
     "defaults"
