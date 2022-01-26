@@ -47,6 +47,6 @@ npm run build:prod
 
 ## 💈 Design
 
-[Behance](https://www.behance.net/gallery/94617669/Argon-Welding-Landing-Page)
-[Dribbble](https://dribbble.com/shots/17361283-Argon-Welding-Landing-page)
+[Behance](https://www.behance.net/gallery/94617669/Argon-Welding-Landing-Page)<br>
+[Dribbble](https://dribbble.com/shots/17361283-Argon-Welding-Landing-page)<br>
 [Instagram](https://www.instagram.com/p/CZNYGJmL4Ma/)
