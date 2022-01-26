@@ -1,5 +1,6 @@
 @import "../utilities/mixins";
 @import "../utilities/variables";
+@import "../utilities/functions";
 
 .social-network {
   @include remove-indents;
@@ -8,7 +9,7 @@
 }
 
 .social-network__icon {
-  width: 32px;
+  width: px2rem(32);
   fill: $color-onsurface-light;
 }
 
@@ -17,7 +18,7 @@
   background-color: $color-surface-light-opacity;
 
   &:not(:nth-last-child(1)) {
-    margin-right: 8px;
+    margin-right: px2rem(8);
   }
 
   &:hover,
@@ -36,5 +37,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+  padding: px2rem(16);
 }
