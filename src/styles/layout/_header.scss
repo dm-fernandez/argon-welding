@@ -6,7 +6,7 @@
   width: 100vw;
   height: 100vh;
   min-height: px2rem(600);
-  margin-bottom: 4vh;
+  margin-bottom: $margin-section-xs;
   background-image: url("../img/argon-welding-cover-01-mobile.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -17,7 +17,7 @@
   }
 
   @media (min-width: $bp-lg) {
-    margin-bottom: 24vh;
+    margin-bottom: $margin-section-lg;
   }
 
   @media (min-width: $bp-md) and (max-width: $bp-lg) {
@@ -41,6 +41,7 @@
 
   @media (min-width: $bp-lg) {
     justify-content: space-between;
+    padding-top: 8vh;
     margin-bottom: 16vh;
   }
 }
